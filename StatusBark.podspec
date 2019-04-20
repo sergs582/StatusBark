@@ -18,10 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-StatusBark allows you to globally change status bar style (a.k.a. color)
-without need of subclassing and implementing statusBarStyle() yourself for each
-child view controller or using deprecated UIApplication.statusBarStyle while
-still allowing customizations for selected view controllers.
+StatusBark helps you globally customize all view controllers' statusBarStyle from .default to .lightContent without manually changing statusBarStyle in each view controller, making custom view controllers hierarchy or using deprecated UIApplication.statusBarStyle but still allows you to change statusBarStyle for selected controllers.
                        DESC
 
   s.homepage         = 'https://github.com/fvolchyok/StatusBark'

@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C03C103C46539F4ADC770645 /* Pods_StatusBark_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD4645F60F091B4EBFBDB1E /* Pods_StatusBark_Example.framework */; };
+		E75AE633226B490A00802E0F /* CustomizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AE632226B490A00802E0F /* CustomizedViewController.swift */; };
+		E75AE635226B4ACB00802E0F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75AE634226B4ACB00802E0F /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		C884FF75D5361038063A6B00 /* Pods-StatusBark_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBark_Example.release.xcconfig"; path = "Target Support Files/Pods-StatusBark_Example/Pods-StatusBark_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CDD4645F60F091B4EBFBDB1E /* Pods_StatusBark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusBark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A11A125BD3DC2E124794E3 /* Pods-StatusBark_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBark_Tests.debug.xcconfig"; path = "Target Support Files/Pods-StatusBark_Tests/Pods-StatusBark_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75AE632226B490A00802E0F /* CustomizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedViewController.swift; sourceTree = "<group>"; };
+		E75AE634226B4ACB00802E0F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F46251BED81803830448718A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				E75AE634226B4ACB00802E0F /* BaseViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E75AE632226B490A00802E0F /* CustomizedViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -170,7 +176,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				42B4840121C5E749FBA46929 /* [CP] Embed Pods Frameworks */,
+				858307DDDF58468DB46F9414 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,28 +268,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42B4840121C5E749FBA46929 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StatusBark_Example/Pods-StatusBark_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/StatusBark/StatusBark.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatusBark.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StatusBark_Example/Pods-StatusBark_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		689C9225BE159D9A3FD9B51D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +288,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		858307DDDF58468DB46F9414 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StatusBark_Example/Pods-StatusBark_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/StatusBark/StatusBark.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StatusBark.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StatusBark_Example/Pods-StatusBark_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8B43C119C354558F2307519 /* [CP] Check Pods Manifest.lock */ = {
@@ -336,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E75AE635226B4ACB00802E0F /* BaseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E75AE633226B490A00802E0F /* CustomizedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

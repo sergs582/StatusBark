@@ -1,8 +1,8 @@
 {
   "name": "StatusBark",
   "version": "0.1.0",
-  "summary": "A short description of StatusBark.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Utility to globally override default statusBarStyle",
+  "description": "StatusBark allows you to globally change status bar style (a.k.a. color)\nwithout need of subclassing and implementing statusBarStyle() yourself for each\nchild view controller or using deprecated UIApplication.statusBarStyle while\nstill allowing customizations for selected view controllers.",
   "homepage": "https://github.com/fvolchyok/StatusBark",
   "license": {
     "type": "MIT",
@@ -15,8 +15,9 @@
     "git": "https://github.com/fvolchyok/StatusBark.git",
     "tag": "0.1.0"
   },
+  "swift_version": "4.2",
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
   "source_files": "StatusBark/Classes/**/*"
 }

@@ -12,7 +12,7 @@ StatusBark helps you globally customize all view controllers' statusBarStyle fro
 ![](StatusBarkDemo.gif?raw=true "StatusBark demo")
 
 ## Requirements
-* iOS11
+* iOS10
 
 ## Installation with CocoaPods
 

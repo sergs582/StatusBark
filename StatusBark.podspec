@@ -30,7 +30,7 @@ StatusBark helps you globally customize all view controllers' statusBarStyle fro
   
   s.swift_version = '4.2'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'StatusBark/Classes/**/*'
   

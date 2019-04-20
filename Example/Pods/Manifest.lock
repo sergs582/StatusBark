@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  StatusBark: 9d3b04c77a95d8b268784076fb834ad2ff3ef41e
+  StatusBark: df5197a21901eedc67506e1ba3763ba3c2eaefbc
 
 PODFILE CHECKSUM: df5842a3fb59d2b1a4a958021d13afcb6bd1afdf
 

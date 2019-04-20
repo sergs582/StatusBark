@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StatusBark_Example' do
+  pod 'StatusBark', :path => '../'
+
+  target 'StatusBark_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
